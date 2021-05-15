@@ -15,6 +15,8 @@ function InputBox() {
   const sendPost = (e) => {
     e.preventDefault();
 
+    if (!inputRef.current.value) return;
+
     db.collection("posts")
       .add({
         message: inputRef.current.value,

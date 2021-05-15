@@ -6,13 +6,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
     <div className="flex flex-col">
       <div className="p-5 bg-white mt-5 rounded-t-2xl shadow-sm">
         <div className="flex items-center space-x-2">
-          <Image
-            className="rounded-full"
-            src={image}
-            width={40}
-            height={40}
-            layout="fixed"
-          />
+          <img className="rounded-full" src={image} width={40} height={40} />
           <div>
             <p className="font-medium">{name}</p>
             {timestamp ? (
